@@ -10,9 +10,9 @@ namespace LengthConversionProgram
 {
     public class UnitDecorator : HandlerDecorator
     {
-        public UnitDecorator(string convertedOutput)
+        public UnitDecorator(ConversionHandler conversionHandler)
         {
-            this.DecoratedOutput = convertedOutput;
+            this.DecoratedOutput = conversionHandler.DecoratedOutput;
         }
 
         public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)

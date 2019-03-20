@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Client.cs
+using System;
 using System.Windows.Forms;
 
 namespace LengthConversionProgram
@@ -44,13 +38,13 @@ namespace LengthConversionProgram
                 mileHandler.HandleConversion(selectedUnit, conversionRequest);
                 mileHandler.DecoratedOutput = conversionRequest.Output.ToString();
 
-                mileHandler = new RoundDecorator(mileHandler.DecoratedOutput);
+                mileHandler = new RoundDecorator(mileHandler);
                 mileHandler.HandleConversion(selectedUnit, conversionRequest);
 
-                mileHandler = new ExpDecorator(mileHandler.DecoratedOutput);
+                mileHandler = new ExpDecorator(mileHandler);
                 mileHandler.HandleConversion(selectedUnit, conversionRequest);
 
-                mileHandler = new UnitDecorator(mileHandler.DecoratedOutput);
+                mileHandler = new UnitDecorator(mileHandler);
                 mileHandler.HandleConversion(selectedUnit, conversionRequest);
 
                 SolutionBox.Text = mileHandler.DecoratedOutput;

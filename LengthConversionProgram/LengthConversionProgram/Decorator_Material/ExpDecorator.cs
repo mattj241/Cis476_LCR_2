@@ -11,9 +11,9 @@ namespace LengthConversionProgram
 {
     public class ExpDecorator : HandlerDecorator
     {
-        public ExpDecorator(string convertedOutput)
+        public ExpDecorator(ConversionHandler conversionHandler)
         {
-            this.DecoratedOutput = convertedOutput;
+            this.DecoratedOutput = conversionHandler.DecoratedOutput;
         }
 
         public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)

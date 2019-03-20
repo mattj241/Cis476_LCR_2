@@ -12,9 +12,9 @@ namespace LengthConversionProgram
     public class RoundDecorator : HandlerDecorator
     {
 
-        public RoundDecorator(string convertedOutput)
+        public RoundDecorator(ConversionHandler conversionHandler)
         {
-            this.DecoratedOutput = convertedOutput;
+            this.DecoratedOutput = conversionHandler.DecoratedOutput;
         }
 
         public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)

@@ -12,12 +12,11 @@ namespace LengthConversionProgram
     {
         public UnitDecorator(ConversionHandler conversionHandler)
         {
-            this.DecoratedOutput = conversionHandler.DecoratedOutput;
-        }
-
-        public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)
-        {
-            this.DecoratedOutput = this.DecoratedOutput + $" {unitRequested}";
+            this.conversionHandler = conversionHandler;
+            this.conversionHandler.DecoratedOutput =
+                $"{this.conversionHandler.DecoratedOutput} {}"; 
         }
     }
 }
+
+//this.DecoratedOutput + $" {unitRequested}";

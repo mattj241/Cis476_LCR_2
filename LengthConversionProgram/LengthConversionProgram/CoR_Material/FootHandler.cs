@@ -12,15 +12,15 @@ namespace LengthConversionProgram
     public class FootHandler : ConversionHandler
     {
 
-        public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)
+        public override void HandleConversion(ConversionRequest currentRequest)
         {
-            if (unitRequested == "Foot")
+            if (currentRequest.Unit == "Foot")
             {
                 currentRequest.Output = currentRequest.Input * 3280.84;
             }
             else
             {
-                successor.HandleConversion(unitRequested, currentRequest);
+                successor.HandleConversion(currentRequest);
             }
         }
 

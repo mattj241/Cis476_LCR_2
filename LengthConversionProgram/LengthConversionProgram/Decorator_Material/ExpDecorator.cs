@@ -13,12 +13,9 @@ namespace LengthConversionProgram
     {
         public ExpDecorator(ConversionHandler conversionHandler)
         {
-            this.DecoratedOutput = conversionHandler.DecoratedOutput;
-        }
-
-        public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)
-        {
-            this.DecoratedOutput = (Double.Parse(this.DecoratedOutput)).ToString("e");
+            this.conversionHandler = conversionHandler;
+            this.conversionHandler.DecoratedOutput = 
+                (Double.Parse(conversionHandler.DecoratedOutput)).ToString("e");
         }
     }
 }

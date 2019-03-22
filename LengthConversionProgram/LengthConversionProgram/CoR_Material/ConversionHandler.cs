@@ -12,7 +12,7 @@ namespace LengthConversionProgram
         protected ConversionHandler successor;
         public string DecoratedOutput;
 
-        public abstract void HandleConversion(string unitRequested, ConversionRequest currentRequest);
+        public abstract void HandleConversion(ConversionRequest currentRequest);
 
         public void SetSuccessor(ConversionHandler unit)
         {

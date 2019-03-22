@@ -33,19 +33,20 @@ namespace LengthConversionProgram
             }
             else
             {
-                conversionRequest = new ConversionRequest(input);
                 string selectedUnit = Spinner.Text;
-                mileHandler.HandleConversion(selectedUnit, conversionRequest);
+                conversionRequest = new ConversionRequest(input);
+                conversionRequest.Unit = selectedUnit;
+                mileHandler.HandleConversion(conversionRequest);
                 mileHandler.DecoratedOutput = conversionRequest.Output.ToString();
 
+                HandlerDecorator handlerDecorator = new HandlerDecorator();
+                handlerDecorator.conversionHandler = 
+
                 mileHandler = new RoundDecorator(mileHandler);
-                mileHandler.HandleConversion(selectedUnit, conversionRequest);
 
                 mileHandler = new ExpDecorator(mileHandler);
-                mileHandler.HandleConversion(selectedUnit, conversionRequest);
 
                 mileHandler = new UnitDecorator(mileHandler);
-                mileHandler.HandleConversion(selectedUnit, conversionRequest);
 
                 SolutionBox.Text = mileHandler.DecoratedOutput;
             }

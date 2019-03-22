@@ -11,10 +11,10 @@ C:\Users\londo\Documents\GitHub\Cis476_LCR\LengthConversionProgram\LengthConvers
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\bin\Debug\LengthConversionProgram.exe.config
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\bin\Debug\LengthConversionProgram.exe
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\bin\Debug\LengthConversionProgram.pdb
-C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.csprojAssemblyReference.cache
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.Client.resources
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.Properties.Resources.resources
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.csproj.GenerateResource.cache
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.csproj.CoreCompileInputs.cache
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.exe
 C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.pdb
+C:\Users\londo\Documents\GitHub\Cis476_LCR_2\LengthConversionProgram\LengthConversionProgram\obj\Debug\LengthConversionProgram.csprojResolveAssemblyReference.cache

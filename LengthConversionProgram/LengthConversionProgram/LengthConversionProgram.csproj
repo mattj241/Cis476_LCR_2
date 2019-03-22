@@ -55,8 +55,8 @@
     <Compile Include="CoR_Material\ConversionRequest.cs" />
     <Compile Include="Decorator_Material\ExpDecorator.cs" />
     <Compile Include="CoR_Material\FootHandler.cs" />
-    <Compile Include="Decorator_Material\HandlerDecorator.cs" />
     <Compile Include="CoR_Material\MileHandler.cs" />
+    <Compile Include="Decorator_Material\HandlerDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Decorator_Material\RoundDecorator.cs" />

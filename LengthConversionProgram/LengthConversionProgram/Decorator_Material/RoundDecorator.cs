@@ -14,12 +14,9 @@ namespace LengthConversionProgram
 
         public RoundDecorator(ConversionHandler conversionHandler)
         {
-            this.DecoratedOutput = conversionHandler.DecoratedOutput;
-        }
-
-        public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)
-        {
-            this.DecoratedOutput = Math.Round(Double.Parse(this.DecoratedOutput), 2).ToString();
+            this.conversionHandler = conversionHandler;
+            this.conversionHandler.DecoratedOutput =
+                Math.Round(Double.Parse(this.conversionHandler.DecoratedOutput), 2).ToString();
         }
 
     }

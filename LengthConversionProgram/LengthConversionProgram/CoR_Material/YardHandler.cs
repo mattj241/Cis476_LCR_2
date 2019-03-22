@@ -12,15 +12,15 @@ namespace LengthConversionProgram
     public class YardHandler : ConversionHandler
     {
 
-        public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)
+        public override void HandleConversion(ConversionRequest currentRequest)
         {
-            if (unitRequested == "Yard")
+            if (currentRequest.Unit == "Yard")
             {
                 currentRequest.Output = currentRequest.Input * 1093.61;
             }
             else
             {
-                successor.HandleConversion(unitRequested, currentRequest);
+                successor.HandleConversion(currentRequest);
             }
         }
 

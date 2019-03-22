@@ -11,15 +11,15 @@ namespace LengthConversionProgram
     public class MileHandler : ConversionHandler
     {
 
-        public override void HandleConversion(string unitRequested, ConversionRequest currentRequest)
+        public override void HandleConversion(ConversionRequest currentRequest)
         {
-            if (unitRequested == "Mile")
+            if (currentRequest.Unit == "Mile")
             {
                 currentRequest.Output = currentRequest.Input * 0.621371;
             }
             else
             {
-                successor.HandleConversion(unitRequested, currentRequest);
+                successor.HandleConversion(currentRequest);
             }
         }
 

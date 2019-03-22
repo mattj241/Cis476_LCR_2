@@ -9,12 +9,13 @@
 namespace LengthConversionProgram
 {
 
-    public abstract class HandlerDecorator : ConversionHandler
+    public class HandlerDecorator
     {
-        /*
-         * C# does not allow double abstract functions. 
-         * Decorators implement this function from ConversionHandler.
-         */
-        //public abstract void HandleConversion(string unitRequested, ConversionRequest currentRequest);
+        public ConversionHandler conversionHandler { get; set; }
+
+        public HandlerDecorator(ConversionHandler conversionHandler)
+        {
+
+        }
     }
 }

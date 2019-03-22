@@ -12,6 +12,7 @@ namespace LengthConversionProgram
         public double Input { get; }
         public double Output { get; set; }
         public string Unit { get; set; }
+        public string DecoratedOutput { get; set; }
 
         public ConversionRequest(double input)
         {
